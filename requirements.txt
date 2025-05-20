@@ -1,0 +1,14 @@
+accelerate
+datasets
+rich
+qwen-vl-utils[decord]==0.0.8
+diffusers[torch]
+torchvision
+ftfy
+salesforce-lavis
+easydict
+transformers==4.51.3
+open_clip_torch
+trl
+numpy<2.0
+git+https://github.com/huggingface/transformers
