@@ -32,3 +32,15 @@ python vl_rl.py --model_path <SFT_MODEL_PATH> --output_dir <OUTPUT_DIR>
 ```
 - --model_path: Path to the model checkpoint obtained from SFT
 - --output_dir: Path to save the RL-finetuned model
+
+## Citation
+
+```bibtex
+@inproceedings{jeon2025iterative,
+  title={Iterative Prompt Refinement for Safer Text-to-Image Generation},
+  author={Jeon, Jinwoo and Oh, JunHyeok and Lee, Hayeong and Lee, Byung-Jun},
+  booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
+  pages={18091--18107},
+  year={2025}
+}
+```
