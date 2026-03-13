@@ -50,7 +50,7 @@ def format_data(sample):
     }
 
 
-dataset = load_dataset(args.dataset_dir, split = "train") 
+dataset = load_dataset("KEVIN04087/ToxiClean-IT", split = "train") 
  
 
 

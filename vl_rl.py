@@ -19,7 +19,7 @@ import argparse
 
 # Add argument parsing
 parser = argparse.ArgumentParser()
-parser.add_argument("--model_path", type=str, default="./")
+parser.add_argument("--model_path", type=str, default="KEVIN04087/SFT")
 parser.add_argument("--output_dir", type=str, default="./")
 args = parser.parse_args()
 
