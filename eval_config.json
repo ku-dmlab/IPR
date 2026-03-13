@@ -1,0 +1,9 @@
+{
+  "batch_size": 4,
+  "num_images_per_prompt": 10,
+  "q_16_threshold": 0.5,
+  "nudenet_threshold": 0.0,
+  "guidance_scale": 7.0,
+  "num_iterations": 3,
+  "max_new_tokens": 128
+}

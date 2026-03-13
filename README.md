@@ -2,6 +2,9 @@
 
 This project implements a Vision-Language Model (VLM)-based pipeline for safer and more aligned text-to-image (T2I) generation by iteratively refining user prompts. The core idea is to evaluate both the input prompt and the generated image using a VLM to ensure safety and preserve user intent.
 
+Much of this repository was adapted from TRL: https://github.com/huggingface/trl
+Thank you for supporting the code
+
 ## Overview
 
 We provide two main scripts:
@@ -55,13 +58,32 @@ Run evaluation with the default 3B adapter checkpoint:
 python eval.py
 ```
 
+Use a separate config file if needed:
+
+```bash
+python eval.py --config_path eval_config.json
+```
+
 Override the adapter checkpoint if needed:
 
 ```bash
 python eval.py --adapter_path <ADAPTER_PATH>
 ```
 
+Override the diffusion model used by the generation `pipe`:
+
+```bash
+python eval.py --diffusion_model sdv1.4
+python eval.py --diffusion_model runwayml/stable-diffusion-v1-5
+```
+
+- `--config_path`: Path to the evaluation config JSON file. Defaults to `eval_config.json`.
 - `--adapter_path`: Adapter checkpoint path or Hugging Face repo ID. Defaults to `KEVIN04087/3B`.
+- `--diffusion_model`: Diffusion model alias or Hugging Face repo ID used for image generation. Defaults to `sdv1.4`.
+
+Supported alias:
+
+- `sdv1.4` -> `CompVis/stable-diffusion-v1-4`
 
 ## Citation
 
@@ -74,8 +96,6 @@ python eval.py --adapter_path <ADAPTER_PATH>
   year={2025}
 }
 ```
-
-
 
 
 
